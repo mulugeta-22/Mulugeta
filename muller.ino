@@ -93,8 +93,7 @@ if(muller){
 Serial.println("error logging data from SHTC3");
 }
 //log data to SD card from SCD 40sensor
-
-   muller=SD.open("SCD4.Txt", FILE_WRITE);
+  muller=SD.open("SCD4.Txt", FILE_WRITE);
    if(muller){
    muller.print(millis()/1000); muller.print(", ");
    muller.print(SCD4.getTemperature()); muller.print(", ");
