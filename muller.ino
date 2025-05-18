@@ -66,7 +66,7 @@ Serial.println("error SCD4 opening datalog text");
 }
 }
 void loop() {
- if (millis()< 259200000 ){  // this will iterate untill 100 seconds 
+ if (millis()< 259200000 ){  // this will iterate the system for 3 days
    digitalWrite(led, HIGH);  // turn the LED on (HIGH is the voltage level)
    delay(5000);// wait for 5 seconds
    //read temprature and humidity from SHTC3 sensor
